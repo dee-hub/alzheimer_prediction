@@ -161,7 +161,7 @@ if st.button('Run on random test image'):
     predicted_class = class_names[np.argmax(preds)]
     true_class = class_names[np.argmax(true_label)]
     
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(3)
     with col1:
         st.markdown("<strong>True Class:</strong>", unsafe_allow_html=True)
         st.markdown(get_styled_class_display(true_class), unsafe_allow_html=True)
